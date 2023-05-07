@@ -7,4 +7,4 @@ steps:
   inputs:
     targetType: 'inline'
     script: |
-      Write-Host "Hello World" > D:\bruh.txt
+      echo "Hello World" > D:\bruh.txt
