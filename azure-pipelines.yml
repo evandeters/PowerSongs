@@ -2,6 +2,9 @@
 pool:
   name: EvanPC
 
-#steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+steps:
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      Write-Host "Hello World" > D:\bruh.txt
